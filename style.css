@@ -1,0 +1,43 @@
+.accordion{
+  position:relative;
+}
+@media (min-width: 768px) {
+  .tab-header {
+    /* Requirements say no absolute positioning for tab Content */
+    /* but here it is used for tab HEADER only */
+    position:absolute;
+    top:0;
+  }
+  .tab-content{
+    padding-top:45px;
+  }
+}
+
+.tab-switcher{
+  display:none;
+}
+
+.tab-header{
+  display:inline-block;
+  color : black;
+  background : grey;
+  padding : 10px;
+  margin-bottom : 3px;
+}
+
+.tab-content{
+  display : none;
+}
+
+.tab-header-active {
+    background: white;
+    color: grey;
+}
+
+.tab-content-active{
+  display : block;
+}
+
+.tab-content h1{
+  margin:0;
+}
